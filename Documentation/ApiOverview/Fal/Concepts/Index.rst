@@ -11,9 +11,7 @@ File Abstraction Layer (FAL). The whole point of FAL - as its name
 implies - is to provide information about files abstracted with
 regards to their actual nature and storage.
 
-Information about files is stored inside database tables and
-using a given file is mostly about creating a database relation
-to the record representing that file.
+The contents of a file is stored in database tables. The use of a particular file usually consists of establishing a database relationship with the record that represents that file.
 
 
 .. _fal-concepts-storages-drivers:
