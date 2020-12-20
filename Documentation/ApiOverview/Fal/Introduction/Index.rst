@@ -7,10 +7,8 @@
 Introduction
 ============
 
-This part of the Core API document contains details about the File Abstraction Layer (FAL),
-TYPO3 CMS' toolbox for handling media. It explains its architecture and
-concepts and details what a web site administrator should know about
-FAL maintenance and permissions.
+This part of the Core API document contains details about the File Abstraction Layer (FAL), the TYPO3 CMS toolbox for handling media. 
+It explains its architecture and concepts in detail, what a website administrator should know about maintaining the FAL and its permissions.
 
 Content related assets - mostly videos and images - are accessible through
 a *file abstraction layer* API and never referenced directly throughout
