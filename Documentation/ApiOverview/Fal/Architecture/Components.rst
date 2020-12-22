@@ -128,10 +128,11 @@ method of the Driver API has the following method signature:
 The File Index
 ==============
 
-Indexing a file creates a database record for the file, containing meta-information both
-*about* the file (file-system properties) and *from* the file (e.g. EXIF information for
-images). Collecting file-system data is done by the Driver, while all additional properties
-have to be fetched by additional services.
+File indexing, performed by the TYPO3 FAL API, creates a database record for the file that contains meta-information about the file (file system properties) and from the file (e.g. EXIF information for images). Collecting the file system data is done by the driver, while all other properties have to be fetched from additional services.
+
+This mainly refers to the database tables sys_file and sys_file_metadata. The sys_file table contains basic information extracted from the file itself, such as size, MIME type, etc. The sys_file_metadata table contains editable properties that can be used to enrich the file with user-specific content. Since this is basically the same as EXIF for images, the metadata for image files is filled with it, but can be freely edited afterwards.
+
+Note: If you are using low-level methods to add files to storages, you will need to trigger indexing manually. This way is not recommended, of course.
 
 This distinction is important because it makes clear that FAL does in fact two things:
 It manages files in terms of *assets* we use in our Content Management System. In that regard,
