@@ -78,10 +78,9 @@ as the reference is done through the normal record relation handling of TYPO3 CM
 Storage
 =======
 
-The Storage is the focal point of the FAL architecture. Even though it doesn't do the actual
-low-level actions on a File (that's up to the Driver), it still does the largest part of the logic.
+The Storage is the central point of the FAL architecture. 
 
-Among the many things done by the Storage layer are:
+Among the many things that the Storage layer does are:
 
 - the capabilities check (is the driver capable of writing a file to the target location?)
 - the action permission checks (is the user allowed to do file actions at all?)
