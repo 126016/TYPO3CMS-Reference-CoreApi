@@ -20,8 +20,8 @@ operation, the other one **after**.
 
 .. note::
 
-   Unless mentioned otherwise, mentions of class "File" below actually refer
-   to the :php:`\TYPO3\CMS\Core\Resource\FileInterface` interface.
+   Unless otherwise indicated, mentions of the class "File" in the following actually 
+   refer to the :php:`\TYPO3\CMS\Core\Resource\FileInterface` interface.
 
    "Folder" objects actually refer to the :php:`\TYPO3\CMS\Core\Resource\Folder`
    class.
