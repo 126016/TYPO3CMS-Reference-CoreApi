@@ -28,7 +28,7 @@ operation, the other one **after**.
 
 .. _fal-architecture-events-resource-storage:
 
-\\TYPO3\\CMS\\Core\\Resource\\ResourceStorage
+\\TYPO3\\CMS\\Core\\Resource\\Event
 =============================================
 
 SanitizeFileNameEvent
