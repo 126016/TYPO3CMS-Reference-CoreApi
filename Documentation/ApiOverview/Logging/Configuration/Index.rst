@@ -50,6 +50,7 @@ The Log Writer configuration is read from the subkey :code:`writerConfiguration`
    ];
 
 The above configuration applies to **all** log entries of level "ERROR" or above.
+The standard configuration can be found in the :code:`DefaultConfiguration.php` of the core and can be viewed or checked e.g. via the backend module "Configuration". You can adapt your configuration in your extension in the file ext_localconf.php. Also this array may be modified in the :code:` typo3conf/AdditionalConfiguration.php` file.
 
 .. important::
 
