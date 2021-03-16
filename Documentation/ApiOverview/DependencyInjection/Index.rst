@@ -242,6 +242,38 @@ When multiple implementation of the same interface exist, an extension needs to 
 implementation should be injected when the interface is type hinted. Find out more about how this
 is achieved in the official `Symfony documentation <https://symfony.com/doc/current/service_container/autowiring.html#working-with-interfaces>`_.
 
+Annotation injection
+-------------------
+
+Another way to use DI is the doctrine annotation :php:`@TYPO3\CMS\Extbase\Annotation\Inject`.
+
+Example:
+
+.. code-block:: php
+
+	/**
+	 * @TYPO3\CMS\Extbase\Annotation\Inject
+	 * @var Foo
+	 */
+	public $property;
+
+Doctrine annotations are actual defined classes, therefore you can also use the annotation with a use statement.
+
+Example:
+
+.. code-block:: php
+
+	use TYPO3\CMS\Extbase\Annotation\Inject;
+
+.. code-block:: php
+
+	/**
+	 * @Inject
+	 * @var Foo
+	 */
+	public $property;
+   
+
 Further information
 ^^^^^^^^^^^^^^^^^^^
 
