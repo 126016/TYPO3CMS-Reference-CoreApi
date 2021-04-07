@@ -339,7 +339,7 @@ Extbase controller.
 .. important::
 
    If you wish to access a setting from your controller via
-   :php:`$this->settings`, the name of the setting must begin with
+   :php:`$this->settings`, the name of the flexform field the setting must begin with
    **settings** directly followed by a dot (`.`).
 
 
