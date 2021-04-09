@@ -7,7 +7,7 @@ Extending the TYPO3 Core
 ========================
 
 Events, Hooks and Signals provide an easy way to extend the functionality of the TYPO3 Core and
-its extensions without blocking others to do the same.
+its extensions without blocking other extensions to do the same.
 
 :ref:`Events <EventDispatcherEvents>` are being emitted by the TYPO3 Core or an Extension via the
 :ref:`EventDispatcher <EventDispatcher>`. The Event
